@@ -27,6 +27,7 @@ pipeline{
             ansiblePlaybook(
               playbook: playbook,
               inventory: inventory,
+              extras: "-u amalonga",
               credentialsId: credentialsId,
               colorized: true,
               become: true,
