@@ -31,7 +31,7 @@ pipeline{
               extras: "-u amalonga -e ansible_python_interpreter=/usr/bin/python3  -e ansible_password=MacWill1977 ",
               credentialsId: 'ama-key',
               colorized: true,
-//              become: true,
+              become: true
             )
            //}
          } 
