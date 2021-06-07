@@ -1,6 +1,4 @@
 
-def AUTHOR = 'cool Amel '
-
 pipeline {
     agent any
     environment{
@@ -9,11 +7,11 @@ pipeline {
       
     }
     stages {
-        stage('Hello') {
+        stage('git source') {
             steps {
                 echo 'Hello World'
                 echo ' this done by M. ${AUTHOR} '
-                git branch: 'params.dev-add-users-via-jenkins-job', credentialsId: 'add-ssh-users', url: 'https://github.com/amalonga/amalonga.git'
+                git branch: 'params.dev-add-users-via-jenkins-job', url: 'https://github.com/amalonga/amalonga.git'
             }
         }
     }
