@@ -2,6 +2,7 @@
 - name: debug test
   become: yes
   become_user: amalonga
+  gather_facts: no
   hosts: all
   connection: local
   vars:
