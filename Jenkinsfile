@@ -8,9 +8,6 @@ pipeline {
      // SERVER_CREDENTIALS = credentials('add-ssh-users')
       
     }
-    parameters {
-        
-    }
     stages {
         stage('Hello') {
             steps {
