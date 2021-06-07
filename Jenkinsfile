@@ -19,13 +19,13 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo ' this done by M. $AUTHOR'
-                withCredentials([
+                /*withCredentials([
                    usernamePassword( credentials: 'add-ssh-users', usernameVariable: USER, passwordVariable: PWD)
                 ]){
 
                    sh " some script $USER ${PWD}"
                 }
-                 
+                */ 
             }
         }
     }
