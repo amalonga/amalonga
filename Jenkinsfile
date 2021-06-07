@@ -1,4 +1,7 @@
 
+
+def AUTHOR= 'cool Amel '
+
 pipeline {
     agent any
     environment{
