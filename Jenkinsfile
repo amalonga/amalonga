@@ -10,7 +10,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                echo ' this done by M. $AUTHOR'
+                echo ' this done by M. ${AUTHOR} '
             }
         }
     }
