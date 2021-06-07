@@ -2,7 +2,7 @@
 pipeline {
     agent any
     environment{
-      AUTHOR='amalonga'
+     def AUTHOR='amalonga'
      // SERVER_CREDENTIALS = credentials('add-ssh-users')
       
     }
