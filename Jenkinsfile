@@ -19,21 +19,6 @@ pipeline {
                 echo 'Hello World'
                 echo ' this done by M. ${AUTHOR} '
 		git url: 'https://github.com/amalonga/amalonga.git', branch: 'params.dev-add-users-via-jenkins-job'
-x
-:x!
-
-
-
-:x!
-
-kkkk
-
-
-
-
-
-
-
 
         }
     }
