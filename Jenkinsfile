@@ -1,5 +1,4 @@
 
-
 def AUTHOR = 'cool Amel '
 
 pipeline {
@@ -10,7 +9,6 @@ pipeline {
       
     }
     parameters {
-        gitParameter branchFilter: 'origin.*/(.*)', defaultValue: 'master', name: 'dev-add-users-via-jenkins-job', type: 'PT_BRANCH', useRepository: 'https://github.com/amalonga/amalonga.git'
         
     }
     stages {
