@@ -26,10 +26,9 @@ pipeline{
         sshagent(credentials: [credentialsId]) {
           ansiColor('xterm') {
             ansiblePlaybook(
-              playbook: playbook,
+              playbook: debug_module_test.yml,
               inventory: inventory,
               credentialsId: credentialsId,
-      //        vaultCredentialsId: vaultCredentialsId,
               colorized: true,
               become: true,
             )
