@@ -29,7 +29,7 @@ pipeline{
               playbook: playbook,
               inventory: inventory,
           //    extras: "-u amalonga ",
-              credentialsId: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfuYHMslZcMgrI1htDZSvsekbUngRYcwRPtP28nEhA6/1niE3H+xqO0o307/R8bUY2Z8P58lenZ2hhD6PVIdOAqDWwOeR0RDJ7O188dBjo1csnMuKjjG5sNyYbOnqbneEMgJzKdYEl5QO4zzbMONktjBgmN/N9C2UQw9oBzVg7O2/wN/iT1+TwR6TPoBwvOritndk4ohxv4M3z3lKvr8gRBkkHs0m04GiqJjZvdznJQP84mLY9T4x99JLBLF+2oUW5aV6cNGFFughbqa4NcrDlsaNj9cZleKhaqFIUcMud0pPgciXBIJQJXoXvOKlyfW/9/AfBWWJCm7rb4uzwoT/f amalonga@amalonga-XPS-15-9570,
+              credentialsId: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfuYHMslZcMgrI1htDZSvsekbUngRYcwRPtP28nEhA6/1niE3H+xqO0o307/R8bUY2Z8P58lenZ2hhD6PVIdOAqDWwOeR0RDJ7O188dBjo1csnMuKjjG5sNyYbOnqbneEMgJzKdYEl5QO4zzbMONktjBgmN/N9C2UQw9oBzVg7O2/wN/iT1+TwR6TPoBwvOritndk4ohxv4M3z3lKvr8gRBkkHs0m04GiqJjZvdznJQP84mLY9T4x99JLBLF+2oUW5aV6cNGFFughbqa4NcrDlsaNj9cZleKhaqFIUcMud0pPgciXBIJQJXoXvOKlyfW/9/AfBWWJCm7rb4uzwoT/f amalonga@amalonga-XPS-15-9570',
               colorized: true,
 //              become: true,
             )
