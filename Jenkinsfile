@@ -19,7 +19,7 @@ pipeline {
                 echo 'Hello World'
                 echo ' \nthis done by M. $AUTHOR'
                 withCredentials([
-                   usernamePassword( credentials: 'add-ssh-users', usernameVariable: USER, passwordVariable: PWD
+                   usernamePassword( credentials: 'add-ssh-users', usernameVariable: USER, passwordVariable: PWD)
                 ]){
 
                    sh " some script $USER ${PWD}
