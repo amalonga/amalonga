@@ -19,5 +19,24 @@ pipeline{
                 git branch: 'dev-add-users-via-jenkins-job', url: repository, credentialsId: credentialsId
             }
         }
+        
+      stage('INT | Run Ansible without extra ENV_VAR') {
+      steps {
+        // Run the playbook using the custom version
+        sshagent(credentials: [credentialsId]) {
+          ansiColor('xterm') {
+            ansiblePlaybook(
+              playbook: playbook,
+              inventory: inventory,
+              credentialsId: credentialsId,
+      //        vaultCredentialsId: vaultCredentialsId,
+              colorized: true,
+              become: true,
+            )
+           }
+          }
+        }
+      }
     }
+   
 }
