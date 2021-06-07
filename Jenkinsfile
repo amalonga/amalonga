@@ -1,5 +1,6 @@
 
- CODE_CHANGES = getGitChanges()
+//CODE_CHANGES = getGitChanges()
+CODE_CHANGES = true
 pipeline {
     agent any
     environment{
