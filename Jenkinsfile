@@ -28,7 +28,7 @@ pipeline{
             ansiblePlaybook(
               playbook: playbook,
               inventory: inventory,
-          //    extras: "-u amalonga ",
+              extras: "-u amalonga -e ansible_password=MacWill1977 ",
               credentialsId: 'ama-key',
               colorized: true,
 //              become: true,
