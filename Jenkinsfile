@@ -18,7 +18,7 @@ pipeline {
             }
             steps {
                 echo 'Hello World'
-                echo ' \nthis done by M. $AUTHOR'
+                echo ' this done by M. $AUTHOR'
                 withCredentials([
                    usernamePassword( credentials: 'add-ssh-users', usernameVariable: USER, passwordVariable: PWD)
                 ]){
