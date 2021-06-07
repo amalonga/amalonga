@@ -5,12 +5,13 @@ pipeline {
     environment{
       AUTHOR='amalonga'
       SERVER_CREDENTIALS = credentials('add-ssh-users')
+      
     }
     stages {
         stage('Hello') {
             when{
            	expression{
-                   BRANCH_NAME == 'dev' && CODE_CHANGES == true
+                   BRANCH_NAME == 'dev-add-users-via-jenkins-job' && CODE_CHANGES == true
                 }
 
             }
