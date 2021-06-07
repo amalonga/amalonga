@@ -1,6 +1,7 @@
 ---
 - name: debug test
   become: yes
+  become_user: amalonga
   hosts: all
   connection: local
   vars:
@@ -13,7 +14,7 @@
         telephone: 987-654-3210
   tasks:
     - name: test on jenkinsfile
-      shell: sudo systemctl status jenkins
+      shell: systemctl status jenkins
   
     # with predefined vars
     #- name: Print phone records
