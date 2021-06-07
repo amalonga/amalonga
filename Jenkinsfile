@@ -27,7 +27,7 @@ pipeline{
             ansiblePlaybook(
               playbook: playbook,
               inventory: inventory,
-              extras: "-u amalonga ansible_ssh_pass=MacWill1977 ",
+              extras: "-u amalonga --extra-vars ansible_ssh_pass=MacWill1977 ",
               credentialsId: credentialsId,
               colorized: true,
               become: true,
