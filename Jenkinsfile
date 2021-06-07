@@ -29,7 +29,7 @@ pipeline{
               playbook: playbook,
               inventory: inventory,
           //    extras: "-u amalonga ",
-              credentialsId: ama-key,
+              credentialsId: 'ama-key',
               colorized: true,
 //              become: true,
             )
