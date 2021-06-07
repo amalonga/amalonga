@@ -8,15 +8,9 @@ pipeline {
     }
     stages {
         stage('Hello') {
-            when{
-           	expression{
-                   BRANCH_NAME == 'dev-add-users-via-jenkins-job' 
-                }
-
-            }
             steps {
                 echo 'Hello World'
-               // echo ' this done by M. $AUTHOR'
+                echo ' this done by M. $AUTHOR'
             }
         }
     }
