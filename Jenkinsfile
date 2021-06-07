@@ -25,7 +25,7 @@ pipeline{
         // Run the playbook using the custom version
           //ansiColor('xterm') {
             ansiblePlaybook(
-              playbook: debug_module_test,
+              playbook: playbook,
               inventory: inventory,
               credentialsId: credentialsId,
               colorized: true,
