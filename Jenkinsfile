@@ -10,12 +10,13 @@ def AUTHOR = "amalonga"
 
 pipeline{
     agent any
-    stages{
-        stage('git source'){
-            steps{
+    stages {
+        stage('git source') {
+
+            steps {
                 echo 'Hello World'
                 echo ' this done by M. AUTHOR '
-                git branch: 'dev-add-users-via-jenkins-job', url: repository, credentialsId: credentialsId,
+                git branch: 'dev-add-users-via-jenkins-job', url: repository, credentialsId: credentialsId
             }
         }
     }
