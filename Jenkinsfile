@@ -23,7 +23,6 @@ pipeline{
       stage('INT | Run Ansible without extra ENV_VAR') {
       steps {
         // Run the playbook using the custom version
-        sshagent(credentials: [credentialsId]) {
           ansiColor('xterm') {
             ansiblePlaybook(
               playbook: debug_module_test,
@@ -33,7 +32,7 @@ pipeline{
               become: true,
             )
            }
-          }
+          
         }
       }
     }
