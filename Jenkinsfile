@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo ' this done by M. AUTHOR '
-                git branch: 'dev-add-users-via-jenkins-job', url: 'https://github.com/amalonga/amalonga.git'
+                git branch: 'dev-add-users-via-jenkins-job', url: repository, credentialsId: credentialsId,
             }
         }
     }
