@@ -1,3 +1,3 @@
 [local]
 192.168.1.76 ansible_ssh_user=amalonga ansible_ssh_pass=123456
-localhost ansible_ssh_user=amalonga ansible_ssh_pass=MacWill1977
+localhost 

@@ -29,7 +29,7 @@ pipeline{
             ansiblePlaybook(
               playbook: playbook,
               inventory: inventory,
-          //    extras: "-u amalonga -e ansible_python_interpreter=/usr/bin/python3  -e ansible_ssh_pass=MacWill1977 ",
+              extras: "-u amalonga  -e ansible_ssh_pass=MacWill1977 ",
               colorized: true,
             )
           } 
