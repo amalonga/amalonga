@@ -1,8 +1,5 @@
 ---
 - name: debug test
-  become: yes
-  become_user: amalonga
-  gather_facts: no
   hosts: all
   vars:
     users:
@@ -14,13 +11,11 @@
         telephone: 987-654-3210
   tasks:
     - name: test on jenkinsfile
-      become: yes
-      become_user: amalonga
       shell: systemctl status jenkins
       register: cool
     
     - debug: 
-        msg: "{{ cool }}"
+        msg: 
  
     # with predefined vars
     #- name: Print phone records

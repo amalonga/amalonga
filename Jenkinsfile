@@ -24,8 +24,7 @@ pipeline{
 
          steps {
         // Run the playbook using the custom version
-       // sh " ansible-playbook -i inventory  -e 'host_key_checking=False'  debug_module_test.yml" 
-          sh " ansible localhost -m setup  "
+        sh " ansible-playbook -i inventory  -e 'host_key_checking=False'  debug_module_test.yml " 
         /*  ansiColor('xterm') {
             ansiblePlaybook(
               playbook: playbook,
