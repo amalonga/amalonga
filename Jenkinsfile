@@ -25,18 +25,15 @@ pipeline{
 
          steps {
         // Run the playbook using the custom version
-        sh " ansible-playbook -i inventory   debug_module_test.yml " 
-        /*  ansiColor('xterm') {
+          ansiColor('xterm') {
             ansiblePlaybook(
               playbook: playbook,
               inventory: inventory,
-              extras: "-u amalonga -e ansible_python_interpreter=/usr/bin/python3  -e ansible_ssh_pass=MacWill1977 ",
-              credentialsId: 'ama-key',
+          //    extras: "-u amalonga -e ansible_python_interpreter=/usr/bin/python3  -e ansible_ssh_pass=MacWill1977 ",
               colorized: true,
-              become: true
             )
-            } 
-	*/
+          } 
+	
          }
       }
     }
