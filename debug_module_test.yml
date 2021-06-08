@@ -15,7 +15,7 @@
       register: cool
     
     - debug: 
-        msg: 
+        msg: "{{ cool }}"
  
     # with predefined vars
     #- name: Print phone records
