@@ -11,7 +11,7 @@
         telephone: 987-654-3210
   tasks:
     - name: test on jenkinsfile
-      shell: systemctl status jenkins
+      shell: 'ps -eaf | tail'
       register: cool
     
     - debug: 
