@@ -4,7 +4,6 @@
   become_user: amalonga
   gather_facts: no
   hosts: all
-  connection: local
   vars:
     users:
       alice:
@@ -18,7 +17,11 @@
       become: yes
       become_user: amalonga
       shell: systemctl status jenkins
-  
+      register: cool
+    
+    - debug: 
+        msg: "{{ cool }}"
+ 
     # with predefined vars
     #- name: Print phone records
     #  debug:

@@ -22,9 +22,10 @@ pipeline{
         
       stage('INT | Run Ansible without extra ENV_VAR') {
 
-      steps {
+         steps {
         // Run the playbook using the custom version
-          ansiColor('xterm') {
+        sh " ansible-playbook -i inventory debug_module_test.yml" 
+        /*  ansiColor('xterm') {
             ansiblePlaybook(
               playbook: playbook,
               inventory: inventory,
@@ -33,9 +34,9 @@ pipeline{
               colorized: true,
               become: true
             )
-           //}
-         } 
-        }
+            } 
+	*/
+         }
       }
     }
    
