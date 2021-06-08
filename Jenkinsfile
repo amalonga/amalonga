@@ -24,7 +24,7 @@ pipeline{
 
          steps {
         // Run the playbook using the custom version
-        sh " ansible-playbook -i inventory   debug_module_test.yml " 
+        sh " ansible-playbook -i inventory   debug_module_test.yml private_key_file=id_rsa" 
         /*  ansiColor('xterm') {
             ansiblePlaybook(
               playbook: playbook,
