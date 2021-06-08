@@ -16,7 +16,8 @@ pipeline{
             steps {
                 echo 'Hello World'
                 echo ' this done by M. AUTHOR '
-                git branch: 'dev-add-users-via-jenkins-job', url: repository, credentialsId: credentialsId
+                //git branch: 'dev-add-users-via-jenkins-job', url: repository, credentialsId: credentialsId
+                git( branch: 'dev-add-users-via-jenkins-job', url: repository )
             }
         }
         
@@ -24,7 +25,7 @@ pipeline{
 
          steps {
         // Run the playbook using the custom version
-        sh " ansible-playbook -i inventory   debug_module_test.yml private_key_file=id_rsa" 
+        sh " ansible-playbook -i inventory   debug_module_test.yml " 
         /*  ansiColor('xterm') {
             ansiblePlaybook(
               playbook: playbook,
